@@ -1,12 +1,21 @@
 body {
-  margin:0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-family: Arial, sans-serif;
   background: #EBEBEB;
 }
 
+#geral {
+    width: 980px;
+    height: 100%;
+    margin: 0px;
+}
+
 header {
   background: #21272B;
-  color: white;
+  color: #FFFFFF;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,7 +36,9 @@ header {
   font-size: 18px;
   margin: 0;
   line-height: 1.2;
+  font-weight: normal;
 }
+
 
 .logo span {
   color: #1BB4E8;
@@ -36,8 +47,24 @@ header {
 
 nav ul {
   list-style: none;
+  color: #FFFFFF;
   display: flex;
   gap: 20px;
+  width: 90%;
+  position: absolute;
+  top: 29px;
+  justify-content: right;
+  
+}
+
+
+
+nav ul li:not(:last-child)::after {
+  content: "|";
+  right: 0px;
+  left: 10px;;
+  position: relative;
+  color: #ffffff;
 }
 
 nav a {
@@ -46,8 +73,10 @@ nav a {
   font-size: 14px;
 }
 
-nav a.ativo {
+
+nav a.menu {
   color: #1BB4E8;
+  
 }
 
 .bp {
@@ -98,66 +127,92 @@ nav a.ativo {
   display: flex;
   padding: 10x 20px;
   gap: 20px;
+  background-color: #FFFFFF;
+  margin-bottom: 1px;
 }
 
+
 .box {
-  flex: 1;
+  flex: 1px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .destinos h2 {
   background: #00aaff;
   color: #FFFFFF;
-  padding: 5px;
+  padding: 0px;
   font-style: italic;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
+  font-weight: lighter;
+  font-size: 20px;
+  text-align: center;
 }
 
+
+
 .frota h2 {
-  background: #d2b279;
+  background: #C6B07F;
   color: #FFFFFF;
-  padding: 5px;
+  padding: 0px;
   font-style: italic;
   display: flex;
-  align-items: center;
   gap: 5px;
+  font-weight: lighter;
+  font-size: 20px;
+  align-items: center;
+
 }
+
 
 .box p {
   font-size: 14px;
   margin: 10px 0;
+  
+  
+
+
 }
 
 .box img {
   width: 100%;
-  margin-top: 10px;
+  margin: 1px;
+  text-align: justify;
+  position: relative;
+  align-items: center;
 }
 
 .imagens {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+margin: 1px;
+  
 }
 
 .imagens img {
-  width: 45%; 
-  height: auto;
-  object-fit: cover;
+  width: 46%; 
+  height: 100%;
+ 
+  
 }
 
 footer {
-  background: #eee;
-  text-align: center;
-  padding: 20px;
+  background: #EBEBEB;
+  width: 980px;
+  text-align: left;
+  padding: 15px;
   margin-top: 20px;
   font-size: 12px;
   position: absolute;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 footer a {
-  color: #333;
+  color: #EBEBEB;
   text-decoration: none;
 }
 
@@ -166,8 +221,23 @@ footer a {
   display: flex;
   align-items: center;
   gap: 10px;
+  
+  
 }
 
 .b2 img {
   width: 30px;
+  
+}
+
+
+.info h2,
+.info h3,
+.info i,
+.info small {
+  font-weight: normal;
+}
+
+.frase-destaque {
+  font-size: 22px
 }
